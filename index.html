@@ -1,126 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water - Making a Difference</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-        
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-        
-        container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-        }
-        
-        section {
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            background: #f4f4f4;
-            border-radius: 8px;
-        }
-        
-        section h2 {
-            color: #667eea;
-            margin-bottom: 1rem;
-            font-size: 1.8rem;
-        }
-        
-        section p {
-            margin-bottom: 1rem;
-        }
-        
-        button {
-            background: #667eea;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s;
-        }
-        
-        button:hover {
-            background: #764ba2;
-        }
-        
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Charity Water</h1>
-        <p>Bringing clean water and sanitation to those in need</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>charity: water — Turn Your Small Change Into Clean Water</title>
+    <meta
+      name="description"
+      content="100% of your donation directly funds local water projects. Track your exact impact with GPS proof."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== Header ===== -->
+    <header class="site-header">
+      <div class="container header-bar">
+        <a class="logo" href="#">
+          <img src="jerrycan.svg" alt="Jerrycan logo" />
+          Charity: Water
+        </a>
+
+        <nav class="nav">
+          <a class="active" href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Price</a>
+          <a href="#">Login</a>
+          <a class="btn-outline" href="#">Start for free</a>
+        </nav>
+      </div>
     </header>
-    
-    <container>
-        <section>
-            <h2>Our Mission</h2>
-            <p>
-                We are dedicated to bringing clean drinking water and sanitation to people in 
-                developing countries. Our work has improved the lives of millions around the world.
-            </p>
-        </section>
-        
-        <section>
-            <h2>What We Do</h2>
-            <p>
-                We work in partnerships with local communities to:
-            </p>
-            <ul style="margin-left: 2rem; margin-bottom: 1rem;">
-                <li>Build safe water systems</li>
-                <li>Provide sanitation facilities</li>
-                <li>Teach health and hygiene practices</li>
-                <li>Empower communities for long-term sustainability</li>
-            </ul>
-        </section>
-        
-        <section>
-            <h2>Get Involved</h2>
-            <p>
-                Every contribution makes a difference. Whether you can donate, volunteer, or simply 
-                spread the word, your support helps us continue our vital work.
-            </p>
-            <button>Donate Now</button>
-        </section>
-    </container>
-    
-    <footer>
-        <p>&copy; 2026 Charity Water. All rights reserved.</p>
-    </footer>
-</body>
+
+    <!-- ===== Hero ===== -->
+    <main class="container hero">
+      <div>
+        <h1>Turn Your Small Change Into Clean Water.</h1>
+        <p>
+          100% of your donation directly funds local water projects. Track your exact
+          impact with GPS proof—even on a college budget.
+        </p>
+
+        <button class="btn-support"><span class="dot"></span> SUPPORT</button>
+
+        <img class="share" src="share.svg" alt="Share this page" />
+      </div>
+
+      <img
+        class="hero-photo"
+        src="/images/drilling-rig.jpg"
+        alt="A drilling rig striking clean water while villagers watch"
+      />
+    </main>
+  </body>
 </html>
